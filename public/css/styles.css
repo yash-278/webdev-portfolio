@@ -1,0 +1,681 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: #151515;
+}
+/*  #202022 */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+hr {
+  border-top: 0ch;
+  border-color: #949495;
+}
+
+/* ==========================================================================
+   Slider Animations
+   ========================================================================== */
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  background: rgb(97, 105, 109);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-text {
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================================================
+   Main Header
+   ========================================================================== */
+
+.main {
+  height: 300vh;
+  display: flex;
+}
+
+.main-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 !important;
+  background-color: #151515;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 80%;
+}
+
+.main-title {
+  font-size: 64px;
+  line-height: 74px;
+  width: 400px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.subtitle {
+  font-size: 14px;
+  width: 80%;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  color: #949495;
+}
+
+/*
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 960px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main-container {
+    width: 100% !important;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    line-height: 74px;
+    width: 100%;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-title {
+    font-size: 1.5rem;
+    line-height: 74px;
+    width: 100%;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Page Controls
+   ========================================================================== */
+.page-control {
+  padding: 0;
+}
+.page-control ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page-control li {
+  padding: 5px 0;
+  font-family: "Lato", sans-serif;
+}
+
+.page-control a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 15px;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -2;
+  background-color: #202022;
+  transform: scale(2);
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+/*
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 960px) {
+  .page-control {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Profile Section
+   ========================================================================== */
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 1em;
+}
+
+.github-button {
+  font-size: 1rem;
+  color: white;
+  margin-right: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.icon {
+  width: 12px;
+  color: white;
+}
+
+/*
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 960px) {
+  .profile {
+    margin: 1rem 0;
+  }
+}
+
+/* ==========================================================================
+   Pages Section
+   ========================================================================== */
+
+.pages {
+  width: 50%;
+}
+
+.pages section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 960px) {
+  .pages {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Projects Page
+   ========================================================================== */
+
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+
+  transition: all 0.3s ease;
+  width: 100%;
+
+  /* margin: 0; */
+}
+#navbar1 {
+  z-index: 3;
+}
+#navbar2 {
+  z-index: 4;
+}
+#navbar3 {
+  z-index: 5;
+}
+.navbar h3 {
+  margin: 0.5em;
+  padding: 1em;
+}
+@media only screen and (min-width: 960px) {
+  .navbar {
+    display: none;
+  }
+}
+
+#project {
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* width: 100%; */
+}
+
+a .project-container {
+  background-color: #202022;
+  width: 90%;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.project-container {
+  padding: 2em;
+  margin: 0;
+}
+
+.project-container:hover {
+  transform: scale(1.1);
+}
+
+.project-lang {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  /* letter-spacing: 3px; */
+}
+
+.project-subs {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #949495;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1260px) {
+  a .project-container {
+    width: 80%;
+  }
+
+  .project-container {
+    padding: 2em;
+    margin: 0;
+  }
+
+  .project-container:hover {
+    transform: scale(1.1);
+  }
+
+  .project-lang {
+    font-size: 12px;
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-subs {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  a .project-container {
+    width: 90%;
+  }
+
+  .project-container {
+    padding: 2em;
+  }
+  .project-main a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  a .project-container {
+    width: 80%;
+  }
+
+  .project-container {
+    padding: 1em;
+    width: 70%;
+    margin: 0 1em;
+  }
+
+  .project-container:hover {
+    transform: scale(1.1);
+  }
+
+  .project-lang {
+    font-size: 8px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-subs {
+    font-size: 10px;
+  }
+}
+
+/* ==========================================================================
+   Tech Page
+   ========================================================================== */
+
+.tech {
+  background-color: #151515;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.web-types {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all ease-in-out;
+}
+
+.type-single {
+  position: relative;
+  width: 40%;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202022;
+  border-radius: 150px;
+}
+
+.type-icons {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  fill: white;
+}
+
+.type-title {
+  margin: 0.7em;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.type-text {
+  font-size: 14px;
+  width: 80%;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  color: #949495;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .circle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .type-icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .type-title {
+    font-size: 1rem;
+  }
+
+  .type-text {
+    font-size: 10px;
+  }
+}
+
+/*
+   Skills Section
+   ========================================================================== */
+
+.tech-skills {
+  width: 80%;
+  border-radius: 10px;
+  background-color: #202022;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all ease-in-out;
+}
+
+.tech-title {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+.tech-list {
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  text-align: center;
+}
+
+.tech-single {
+  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .tech-title {
+    font-size: 1rem;
+  }
+  .tech-single {
+    font-size: 10px;
+  }
+}
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+.contact {
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: -20px 0;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+.row .col.x-50 {
+  width: 50%;
+}
+.row .col.x-100 {
+  width: 100%;
+}
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  /* top: 50%;
+  transform: translateY(-50%); */
+}
+.get-in-touch .title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  background-color: #151515;
+  color: #fff;
+  border-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: "Lato", sans-serif;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.note {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: Lusitana, serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+.note .link {
+  color: #888;
+  text-decoration: none;
+}
+.note .link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .get-in-touch .title {
+    font-size: 25px;
+  }
+
+  .contact-form .submit-btn {
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================================
+   Animated Classes
+   ========================================================================== */
+
+.appear-animation {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
