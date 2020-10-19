@@ -2,7 +2,7 @@
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".anime-text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".anime-text", { y: "0%", duration: 1.5, stagger: 0.25 });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1.5");
 tl.fromTo(".main-animation", { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.25 }, "-=1");
@@ -24,7 +24,7 @@ function scrollAppear() {
   var webTypesPosition = webTypes.getBoundingClientRect().top;
   var skillsPosition = skills.getBoundingClientRect().top;
 
-  var screenPosition = window.innerHeight / 1.5;
+  var screenPosition = window.innerHeight / 1.1;
 
   if (webTypesPosition < screenPosition) {
     webTypes.classList.add("appear-animation");
