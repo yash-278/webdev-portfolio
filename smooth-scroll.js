@@ -1,4 +1,4 @@
-import jump from "./node_modules/jump.js/dist/jump.module.js";
+import jump from "node_modules/jump.js/dist/jump.module.js";
 
 var button1 = document.getElementById("btn1");
 var button2 = document.getElementById("btn2");
