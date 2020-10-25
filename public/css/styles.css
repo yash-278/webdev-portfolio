@@ -253,6 +253,12 @@ hr {
   align-items: center;
 }
 
+@media only screen and (max-width: 960px) {
+  .pages section {
+    height: 90vh;
+  }
+}
+
 /*
    Media Queries
    ========================================================================== */
@@ -303,9 +309,13 @@ hr {
   /* width: 100%; */
 }
 
+.project-main {
+  position: relative;
+  width: 80%;
+}
+
 a .project-container {
   background-color: #202022;
-  width: 90%;
   transition: all 0.3s ease;
   border-radius: 10px;
 }
@@ -390,7 +400,7 @@ a .project-container {
 
 @media only screen and (max-width: 600px) {
   a .project-container {
-    width: 80%;
+    width: 100%;
   }
 
   .project-container {
