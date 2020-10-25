@@ -392,6 +392,9 @@ a .project-container {
   .project-container {
     padding: 2em;
   }
+  .project-main {
+    width: 95%;
+  }
   .project-main a {
     display: flex;
     justify-content: center;
